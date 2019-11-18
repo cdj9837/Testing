@@ -4,23 +4,17 @@ import java.io.Serializable;
 
 class Ingredients implements Serializable {
     String Name;
-    String Notes;
     String Unit;
-    double IngredientID;
-    String DisplayAmount;
-    double Amount;
+    long Amount;
 
-    public Ingredients(){
+    public Ingredients() {
 
     }
 
-    public Ingredients(String Name, String Notes, String Unit, double IngredientID, String DisplayAmount, double Amount){
-        this.Name = Name;
-        this.Notes = Notes;
-        this.Unit = Unit;
-        this.IngredientID = IngredientID;
-        this.DisplayAmount = DisplayAmount;
-        this.Amount =  Amount;
+    public Ingredients(String name, String unit, long amount) {
+        Name = name;
+        Unit = unit;
+        Amount = amount;
     }
 
     public String getName() {
@@ -31,14 +25,6 @@ class Ingredients implements Serializable {
         Name = name;
     }
 
-    public String getNotes() {
-        return Notes;
-    }
-
-    public void setNotes(String notes) {
-        Notes = notes;
-    }
-
     public String getUnit() {
         return Unit;
     }
@@ -47,27 +33,11 @@ class Ingredients implements Serializable {
         Unit = unit;
     }
 
-    public double getIngredientID() {
-        return IngredientID;
-    }
-
-    public void setIngredientID(double ingredientID) {
-        IngredientID = ingredientID;
-    }
-
-    public String getDisplayAmount() {
-        return DisplayAmount;
-    }
-
-    public void setDisplayAmount(String displayAmount) {
-        DisplayAmount = displayAmount;
-    }
-
-    public double getAmount() {
+    public long getAmount() {
         return Amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(long amount) {
         Amount = amount;
     }
 }

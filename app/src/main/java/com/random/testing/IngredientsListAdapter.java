@@ -30,8 +30,8 @@ public class IngredientsListAdapter extends ArrayAdapter<Ingredients> {
         String name = getItem(position).getName();
         String unit = String.valueOf(getItem(position).getUnit());
         String amount = String.valueOf(getItem(position).getAmount());
-        String notes = String.valueOf(getItem(position).getNotes());
-        String item = amount + " " + unit + " " + name + ", " + notes;
+        //String notes = String.valueOf(getItem(position).getNotes());
+        String item = amount + " " + unit + " " + name;
 
         //Create the recipe object with the info
         //RecipeTest recipeTest = new RecipeTest(name, num);
